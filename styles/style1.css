@@ -1,0 +1,479 @@
+body {
+	margin: 0;
+	font-family: Arial;
+	overflow-x:hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.topNavigation a{
+	float: left;
+}
+
+form.example input[type=text] {
+	margin-top: 25px;
+	padding: 5px;
+	font-size: 17px;
+	float: left;
+	width: 90%;
+	border: 0.5px lighter gray;
+}
+
+form.example button {
+	margin-top: 25px;
+	margin-left:-37px;
+	padding:5px;
+	padding-top:3px;
+	padding-bottom:0px;
+	float: left;
+	font-size: 17px;
+	border: none;
+	border-left: none;
+	cursor: pointer;
+	background-color:inherit;
+}
+
+form.example button:hover {
+	border: 1px solid grey;
+}
+
+.btnSignIn {
+	position:relative;
+	display: block;
+	border: none;
+	background-color: #3363FF;
+	padding: 10px 14px;
+	font-size: 12px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	top:25px;
+	margin-left:75px;
+}
+
+.Modal{
+	background-color:inherit;
+	border:1px solid gray;
+	position:relative;
+	top:10px;
+	margin-left:10px;
+}
+
+.Modal:hover{
+	cursor:pointer;
+}
+
+.modal {
+	display: none;
+	position: absolute;
+	left: 865px;
+	top: 58px;
+	z-index:1;
+}
+
+.modalColumnLeft{
+	float:left;
+	width: 50%;
+	border-right:1px solid gray;
+}
+
+.modalColumnLeft td, .modalColumnRight td{
+	padding-top:10px;
+}
+
+.modalColumnRight{
+	float:left;
+	padding-left:10px;
+	width:50%;
+}
+
+.SignInSignUp{
+	background:inherit; 
+	border:none;
+	cursor:pointer
+}
+
+.SignInSignUp:hover{
+	color:dodgerblue;
+}
+
+.modal-content {
+	background-color: white;
+	margin: auto;
+	padding: 10px;
+	border: 1px solid black;
+	width: 510px;
+}
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.Button{
+	float:left;
+	background:inherit; 
+	border:none;
+	cursor:pointer;
+	font-size:16px;
+	text-align:left;
+}
+
+.Button:hover{
+	color:dodgerblue;
+	text-decoration:underline;
+}
+
+.btnSellWithUs{
+	border: none;
+	background-color: inherit;
+	padding: 10px 14px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+	position:absolute;
+	left: 1375px;
+	top:23px;
+}
+
+.btnSellWithUs:hover{
+	background: #C0C0C0;
+}
+
+.btnCheckOut{
+	border: none;
+	background-color: inherit;
+	font-size: 16px;
+	cursor: pointer;
+	position:absolute;
+	left: 1500px;
+	top:24px;
+}
+
+.navbar {
+	width: 100%;
+	background-color: black;
+	overflow: auto;
+	padding-left:30px;
+}
+
+.navbar a {
+	float: left;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #f5f5f5;
+	color:black;
+	position: relative;
+}
+
+.dropbtn{
+	font-size:50px;
+}
+
+.dropdown {
+	float: left;
+}
+
+.triangle{
+	position:relative;
+	float:right;
+	margin-left:10px;
+	margin-top:5px;
+	width:0;
+	height:0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid white;
+}
+
+.navbar a:hover, .dropdown:hover .triangle{
+	border-top: 6px solid black;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;  
+	border: none;
+	color: white;
+	padding: 14px;
+	background-color: black;
+}
+
+.dropdownContent{
+	background-color: #f5f5f5;
+	width:700px; 
+	font-size:24px;
+	padding-left:25px;
+	padding-top:20px;
+}
+
+.dropdown-content{
+	position: absolute;
+	display: none;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	float: left;
+}
+
+.Background{
+	display: none;
+	position:absolute;
+	margin-top:-97px;
+	margin-left:-1110px;
+	width: 100000px;
+	height: 1500px;
+	background: rgba(0,0,0,0.6);
+	z-index:-1;
+}
+
+.dropdown:hover .Background{
+	display:block;
+}
+
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+
+.row {
+	background-color:white; 
+	margin-top:-24px;
+}
+
+.column {
+	text-align: left;
+	float:left;
+	width: 60%;
+	border-right:1px solid #d3d3d3;
+}
+
+.column1 {
+	float: left;
+	width: 40%;
+}
+
+.FeaturedTable{
+	float: left;
+	width: 20%;
+}
+
+.FlightChartsTable{
+	float: left;
+	width: 50%;
+}
+
+.BannersTable{
+	float:left;
+	width:30%;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.ShopAll {
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 13px;
+	background-color: inherit;
+	cursor: pointer;
+}
+
+.btnOrderNow{
+	margin-left: 20px;
+	display: block;
+	border: none;
+	background-color: #008000;
+	padding: 10px 80px;
+	font-size: 15px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+}
+
+.button2 {
+	margin-left: 6px;
+	padding: 8px 53px;
+	background-color: white; 
+	color: green; 
+	border: 2px solid #4CAF50;
+}
+
+.button2:hover {
+	background-color: #4CAF50;
+	color: white;
+	cursor:pointer;
+}
+
+.button1 {
+	margin-left:5px;
+	background-color: white; 
+	padding: 8px 35px;
+	color: #008CBA; 
+	border: 2px solid #008CBA;
+	margin-left:8px;
+}
+
+.button1:hover {
+	background-color: #008CBA;
+	color: white;
+	cursor:pointer;
+}
+
+.dropdown-contentTable{
+	width:100%;
+	display:inline;
+	padding-left:25px;
+}
+
+.dropdown-contentTable th{
+	padding-top:20px;
+}
+
+/* Upcoming */
+.Upcoming {
+	height:300px;
+	width:100%;
+	position: relative;
+	background-color:#f5f5f5;
+}
+
+.DiscSlidesHeader{
+	font-size: 25px;
+	padding:20px;
+	text-align:center;
+}
+
+.DiscSlidesText{
+	text-align: center;
+	width:300px;
+	font-size:15px;
+	margin-left:50px;
+	position:relative;
+}
+
+.DiscSlidesButton{
+	background:inherit; 
+	border:none;
+	cursor:pointer;
+	font-size:16px;
+}
+
+.DiscSlidesButton:hover {
+	background-color: black;
+	color:white;
+	cursor:pointer;
+}
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dotStyle{
+	text-align:center;
+	background-color: #f5f5f5;
+	padding-bottom:25px;
+	position:relative;
+}
+
+.dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Featured */
+.Featured{
+	position: relative;
+	padding: 30px;
+}
+
+/*Bottom Navigation*/
+.BottomNavigation{
+	background-color:#f5f5f5;
+	width:100%;
+	float:left;
+	padding-top:50px;
+	font-size:14px;
+}
+
+.TableBottomNavigation{
+	margin-top:50px; 
+	margin-left:150px; 
+	display:inline;
+}
+
+.TableBottomNavigation td{
+	float:left;
+}
+
+.TableBottomNavigation th{
+	text-align:left;
+	padding-left:6px;
+}

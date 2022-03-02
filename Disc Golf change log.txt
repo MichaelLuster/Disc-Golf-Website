@@ -1,0 +1,15 @@
+5/17/2021: Created database to start working on project
+
+5/19/2021: Finished adding everything to the top navigation, still needs to be cleaned up
+
+5/24/2021: Have the middle navigation display mostly done, still needs to be cleaned up, and the dropdown menu needs to be worked on.
+
+5/25/2025: Dropdown menu display is mostly complete, needs to be cleaned up, there is no buttons yet.
+
+6/25/2021: The main menu and sign in page assetics mostly done, still needs work. Created the shopping cart page.
+
+7/1/2021: The side bar is working, need to add the assetics.
+
+7/4/2021: Worked on side bar assestics and top navigation
+
+7/5/2021: Worked on side bar assestics and top navigation
