@@ -9,7 +9,7 @@ The goal is to be able create a more central place for people to be able to find
 
 # Current Progress <br> 
 The current progress includes a main menu for people to be able to see the newest releases, as well as a sign in and sign up page
-<br> <p align= "center"> ![Picture1](![image](https://user-images.githubusercontent.com/77820332/156283026-65f8a36b-1936-4189-a319-f1d4d0e77abf.png)) </p>
+<br> <p align= "center"> ![Picture1](https://user-images.githubusercontent.com/77820332/156283026-65f8a36b-1936-4189-a319-f1d4d0e77abf.png) </p>
 <br> <br> <p align= "center"> ![SignInPage](https://user-images.githubusercontent.com/77820332/142134708-02564fd3-fe20-4b14-8a9e-01a92fe03f8d.JPG) </p>
 
 <br> The page also includes a way for buyers to be able to see all the discs from a certain company or a certain plastic, for now the page only contains a template for this.
