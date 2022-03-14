@@ -13,4 +13,4 @@ The current progress includes a main menu for people to be able to see the newes
 <br> <br> <p align= "center"> ![SignInPage](https://user-images.githubusercontent.com/77820332/142134708-02564fd3-fe20-4b14-8a9e-01a92fe03f8d.JPG) </p>
 
 <br> The page also includes a way for buyers to be able to see all the discs from a certain company or a certain plastic, for now the page only contains a template for this.
-<br> <p align= "center">![Capture](https://user-images.githubusercontent.com/77820332/142135213-c14a82d7-3c6d-4fc3-bfe4-cd4768cdc012.JPG) </p>
+<br> <p align= "center">![Capture](https://user-images.githubusercontent.com/![image](https://user-images.githubusercontent.com/77820332/158108160-6dcea137-229c-4bf4-a6fa-ef6da597c34b.png)) </p>
