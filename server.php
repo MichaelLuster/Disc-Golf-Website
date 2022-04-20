@@ -36,7 +36,7 @@ if(isset($_POST['sign_up'])){
 
     //If no errors sign up the user and go to MainMenu passing the users email
     if(count($errors) == 0){
-        $password = md5($password_1);
+        $password = md5($password);
         // Get the next id
         $sql = "SELECT id FROM CUSTOMER order by id desc LIMIT 1";
         $result = $conn->query($sql);
