@@ -8,8 +8,10 @@ The current problem is there is no central place for people to be able to sell o
 The goal is to be able create a more central place for people to be able to find a disc they are looking for and to have sellers on one central platform to attract more people to their products. 
 
 # Current Progress <br> 
-The current progress includes a main menu for people to be able to see the newest releases, sign in and sign up page, and an administration page
-<br> <p align= "center"> ![Picture1](https://user-images.githubusercontent.com/77820332/156283026-65f8a36b-1936-4189-a319-f1d4d0e77abf.png) </p>
+The current progress includes a main menu for people to be able to see the newest releases, sign in and sign up page, and an administration page, and it can be viewed at the following link:<br><br>
+http://www.csce.uark.edu/~moluster/project_java/MainMenu.php
+
+<br><p align= "center"> ![Picture1](https://user-images.githubusercontent.com/77820332/156283026-65f8a36b-1936-4189-a319-f1d4d0e77abf.png) </p>
 If the user presses the profile icon they will be able to see a pop up application where they can either sign in or sign up on the page, with other applications going to be added in the future.
 <br> <p align= "center"> ![ModalArea](https://user-images.githubusercontent.com/77820332/164314300-0eb6c3e4-f6f1-4452-a904-0d8d39508962.png) </p>
 If the user has not created an account then they should click the sign up option and create an account or if they try to sign in without an account an alert will be prompted that says wrong username/password.
