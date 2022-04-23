@@ -27,7 +27,8 @@ If a user chooses to log out or their session ends then they will be redirected 
  <br> <p align = "center">![AdminLogin](https://user-images.githubusercontent.com/77820332/164319648-d7b11a6a-0cc8-4fb1-b9d6-b9a75e1155c3.png) </p>
  Once logged in the administration currently has the option to be able to mangage the inventory. 
  <br> <p align = "center">![AdminMainMenu](https://user-images.githubusercontent.com/77820332/164319911-a11b2eec-998c-4531-9408-0b55fb843ab2.png)</p>
- If the administration clicks the "manage inventry" button then they will be redirected to a page where they can see the inventory or add another instance.
- <br> <p align = "center">![AdminManageInventory](https://user-images.githubusercontent.com/77820332/164320127-1c7402b1-bc0e-4316-ae3b-d806cb4db496.png) </p>
+ If the administration clicks the "manage inventory" button then they will be redirected to a page where they can see the current inventory or add another instance. The user can view the inventory by clicking the show inventory button or hide the hide inventory by clicking the hide inventory option. The user can add new inventory by filling in the form and clicking submit
+ <br><p align = "center">![AdminManageInventory](https://user-images.githubusercontent.com/77820332/164884953-780a473e-5398-4aa1-8a40-b8208139ccf4.png)
+ <br> <p align = "center">![AdminManageInventory1](https://user-images.githubusercontent.com/77820332/164884838-c29d9013-fe7f-4093-b2b6-5a4c82c700d6.png)) </p>
 
 
