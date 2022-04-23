@@ -28,7 +28,7 @@ if(isset($_GET['logout'])){
             <p class = "WelcomeMess"><b>Welcome Back,<br><?php echo $_SESSION['username']; ?></b></p>
         <?php endif ?>
         <?php if(!isset($_SESSION['username'])) : ?>
-            <a href ="CustomerLogin.php"><button class = "btnSignIn"> Sign In</button></a>
+            <a href ="CustomerLogin.php" style="text-decoration:none"><button class = "btnSignIn"> Sign In</button></a>
         <?php endif ?>
 
 	
@@ -76,7 +76,7 @@ if(isset($_GET['logout'])){
 		</div>
 	</div>
 	<a href = "#"><button class = "btn btnSellWithUs"> Sell with us </button></a>
-	<a href = "shoppingcart.html"><button class = "btn btnCheckOut"><img src="Images/ShoppingCartIcon.png" width = "35" height = "35"></button></a>
+	<a href = "#"><button class = "btn btnCheckOut"><img src="Images/ShoppingCartIcon.png" width = "35" height = "35"></button></a>
     </div>
 </div>
 
@@ -664,7 +664,7 @@ if(isset($_GET['logout'])){
 				<td><div class = "DiscSlidesText" style = "width:300px; font-size:15px; margin-left:50px">
 					<div style = "padding-bottom:25px; font-size:20px"><b>Prototype P2</b></div>
 					Putter <br><br> 
-					Speed 2| Glide 3| Turn 0 | Fade 1 <br><br>
+					Speed 2 | Glide 3 | Turn 0 | Fade 1 <br><br>
 					Available in: D-Line<br><br>
 					Lowest Listing: $15.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
@@ -673,7 +673,7 @@ if(isset($_GET['logout'])){
 				<td><div class = "DiscSlidesText">
 					<div style = "padding-bottom:25px; font-size:20px"><b>Tour Series Royal Rage II</b></div>
 					Fairway Driver <br><br> 
-					Speed 7| Glide 5| Turn 0 | Fade 2 <br><br>
+					Speed 7 | Glide 5 | Turn 0 | Fade 2 <br><br>
 					Available in: Vapor<br><br>
 					Lowest Listing: $24.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
@@ -692,7 +692,7 @@ if(isset($_GET['logout'])){
 				<td><div class = "DiscSlidesText" style = "width:300px; font-size:15px; margin-left:25px">
 					<div style = "padding-bottom:25px; font-size:20px"><b>Tour Series Zone</b></div>
 					Putter <br><br> 
-					Speed 2| Glide 3| Turn 0 | Fade 1 <br><br>
+					Speed 2 | Glide 3 | Turn 0 | Fade 1 <br><br>
 					Available in: Crystal FLX<br><br>
 					Lowest Listing: $15.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
@@ -701,7 +701,7 @@ if(isset($_GET['logout'])){
 				<td><div class = "DiscSlidesText">
 					<div style = "padding-bottom:25px; font-size:20px"><b>First Run Scorch</b></div>
 					Fairway Driver <br><br> 
-					Speed 7| Glide 5| Turn 0 | Fade 2 <br><br>
+					Speed 7 | Glide 5 | Turn 0 | Fade 2 <br><br>
 					Available in: Z-Line<br><br>
 					Lowest Listing: $24.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
@@ -719,7 +719,7 @@ if(isset($_GET['logout'])){
 				<td><div class = "DiscSlidesText" style = "width:300px; font-size:15px; margin-left:25px">
 					<div style = "padding-bottom:25px; font-size:20px"><b>Tour Series Warden</b></div>
 					Putter <br><br> 
-					Speed 2| Glide 3| Turn 0 | Fade 1 <br><br>
+					Speed 2 | Glide 3 | Turn 0 | Fade 1 <br><br>
 					Available in: Hybrid<br><br>
 					Lowest Listing: $15.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
@@ -728,7 +728,7 @@ if(isset($_GET['logout'])){
 				<td><div class = "DiscSlidesText">
 					<div style = "padding-bottom:25px; font-size:20px"><b>Tour Series Sergeant</b></div>
 					Fairway Driver <br><br> 
-					Speed 7| Glide 5| Turn 0 | Fade 2 <br><br>
+					Speed 7 | Glide 5 | Turn 0 | Fade 2 <br><br>
 					Available in: LucidX<br><br>
 					Lowest Listing: $24.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
@@ -746,7 +746,7 @@ if(isset($_GET['logout'])){
 				<td><div class = "DiscSlidesText" style = "width:300px; font-size:15px; margin-left:25px">
 					<div style = "padding-bottom:25px; font-size:20px"><b>Invader</b></div>
 					Putter <br><br> 
-					Speed 2| Glide 3| Turn 0 | Fade 1 <br><br>
+					Speed 2 | Glide 3 | Turn 0 | Fade 1 <br><br>
 					Available in: DX<br><br>
 					Lowest Listing: $15.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
@@ -773,7 +773,7 @@ if(isset($_GET['logout'])){
 				<td><div class = "DiscSlidesText" style = "width:300px; font-size:15px; margin-left:25px">
 					<div style = "padding-bottom:25px; font-size:20px"><b>Explorer</b></div>
 					Putter <br><br> 
-					Speed 2| Glide 3| Turn 0 | Fade 1 <br><br>
+					Speed 2 | Glide 3 | Turn 0 | Fade 1 <br><br>
 					Available in: Glimmer OptoX<br><br>
 					Lowest Listing: $15.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
@@ -782,7 +782,7 @@ if(isset($_GET['logout'])){
 				<td><div class = "DiscSlidesText">
 					<div style = "padding-bottom:25px; font-size:20px"><b>Fuse</b></div>
 					Fairway Driver <br><br> 
-					Speed 7| Glide 5| Turn 0 | Fade 2 <br><br>
+					Speed 7 | Glide 5 | Turn 0 | Fade 2 <br><br>
 					Available in: Glimmer OptoX<br><br>
 					Lowest Listing: $24.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
@@ -799,22 +799,22 @@ if(isset($_GET['logout'])){
 				<td><img src="Images/Bandit.png" width = "250" height = "250" style = "margin-left:50px; margin-top:-35px"></td>
 				<td><div class = "DiscSlidesText" style = "width:300px; font-size:15px; margin-left:25px">
 					<div style = "padding-bottom:25px; font-size:20px"><b>Bandit</b></div>
-					Putter <br><br> 
-					Speed 2| Glide 3| Turn 0 | Fade 1 <br><br>
-					Available in: Glimmer OptoX<br><br>
+					Fairway Driver <br><br> 
+					Speed 9 | Glide 5 | Turn -2 | Fade 1 <br><br>
+					Available in: Icon<br><br>
 					Lowest Listing: $15.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
 				</td>
 				<td><img src = "Images/Legacy-Logo.png" width = "225" height = "225" style = "margin-left:50px"></td>
 				<td><div class = "DiscSlidesText">
-					<div style = "padding-bottom:25px; font-size:20px"><b>Fuse</b></div>
+					<div style = "padding-bottom:25px; font-size:20px"><b>Patriot</b></div>
 					Fairway Driver <br><br> 
-					Speed 7| Glide 5| Turn 0 | Fade 2 <br><br>
-					Available in: Glimmer OptoX<br><br>
-					Lowest Listing: $24.99<br><br>
+					Speed 7 | Glide 5 | Turn -2 | Fade 1 <br><br>
+					Available in: Legend<br><br>
+					Lowest Listing: $29.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
 				</td>
-				<td><img src="Images/OptoXGlimmerFuse.png" width = "250" height = "250" style = "margin-left:25px; margin-top:-35px"><td>
+				<td><img src="Images/LegendPatriot.png" width = "250" height = "250" style = "margin-left:25px; margin-top:-35px"><td>
 			</tr>
 		</table>
 	</div>
@@ -823,25 +823,25 @@ if(isset($_GET['logout'])){
 		<div class = "DiscSlidesHeader"><b>MVP Latest Release</b></div>
 		<table>
 			<tr Style = "postion:relative">
-				<td><img src="Images/Bandit.png" width = "250" height = "250" style = "margin-left:50px; margin-top:-35px"></td>
+				<td><img src="Images/CosmicNeutronTrace.png" width = "250" height = "250" style = "margin-left:50px; margin-top:-35px"></td>
 				<td><div class = "DiscSlidesText" style = "width:300px; font-size:15px; margin-left:25px">
-					<div style = "padding-bottom:25px; font-size:20px"><b>Bandit</b></div>
-					Putter <br><br> 
-					Speed 2| Glide 3| Turn 0 | Fade 1 <br><br>
-					Available in: Glimmer OptoX<br><br>
+					<div style = "padding-bottom:25px; font-size:20px"><b>Trace</b></div>
+					Distance Driver <br><br> 
+					Speed 11 | Glide 5 | Turn -1| Fade 2 <br><br>
+					Available in: Neutron<br><br>
 					Lowest Listing: $15.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
 				</td>
 				<td><img src = "Images/MVP-Logo.png" width = "225" height = "225" style = "margin-left:50px"></td>
 				<td><div class = "DiscSlidesText">
-					<div style = "padding-bottom:25px; font-size:20px"><b>Fuse</b></div>
-					Fairway Driver <br><br> 
-					Speed 7| Glide 5| Turn 0 | Fade 2 <br><br>
-					Available in: Glimmer OptoX<br><br>
+					<div style = "padding-bottom:25px; font-size:20px"><b>Octane</b></div>
+					Distance Driver <br><br> 
+					Speed 13 | Glide 5 | Turn -1.5 | Fade 2 <br><br>
+					Available in: Fission<br><br>
 					Lowest Listing: $24.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
 				</td>
-				<td><img src="Images/OptoXGlimmerFuse.png" width = "250" height = "250" style = "margin-left:25px; margin-top:-35px"><td>
+				<td><img src="Images/FissionOctane.png" width = "250" height = "250" style = "margin-left:25px; margin-top:-35px"><td>
 			</tr>
 		</table>
 	</div>
@@ -850,25 +850,25 @@ if(isset($_GET['logout'])){
 		<div class = "DiscSlidesHeader"><b>Westside Latest Release</b></div>
 		<table>
 			<tr Style = "postion:relative">
-				<td><img src="Images/Bandit.png" width = "250" height = "250" style = "margin-left:50px; margin-top:-35px"></td>
+				<td><img src="Images/OrigioBurstQueen.png" width = "250" height = "250" style = "margin-left:50px; margin-top:-35px"></td>
 				<td><div class = "DiscSlidesText" style = "width:300px; font-size:15px; margin-left:25px">
-					<div style = "padding-bottom:25px; font-size:20px"><b>Bandit</b></div>
-					Putter <br><br> 
-					Speed 2| Glide 3| Turn 0 | Fade 1 <br><br>
-					Available in: Glimmer OptoX<br><br>
-					Lowest Listing: $15.99<br><br>
+					<div style = "padding-bottom:25px; font-size:20px"><b>Queen</b></div>
+					Distance Driver <br><br> 
+					Speed 14 | Glide 5 | Turn -3 | Fade 2 <br><br>
+					Available in: Origio<br><br>
+					Lowest Listing: $10.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
 				</td>
 				<td><img src = "Images/Westside-Logo.png" width = "225" height = "225" style = "margin-left:50px"></td>
 				<td><div class = "DiscSlidesText">
-					<div style = "padding-bottom:25px; font-size:20px"><b>Fuse</b></div>
-					Fairway Driver <br><br> 
-					Speed 7| Glide 5| Turn 0 | Fade 2 <br><br>
-					Available in: Glimmer OptoX<br><br>
-					Lowest Listing: $24.99<br><br>
+					<div style = "padding-bottom:25px; font-size:20px"><b>Sword</b></div>
+					Distance Driver <br><br> 
+					Speed 12 | Glide 5 | Turn -0.5 | Fade 2 <br><br>
+					Available in: Origio<br><br>
+					Lowest Listing: $10.99<br><br>
 					<button class = "DiscSlidesButton"> Order Now</button></div>
 				</td>
-				<td><img src="Images/OptoXGlimmerFuse.png" width = "250" height = "250" style = "margin-left:25px; margin-top:-35px"><td>
+				<td><img src="Images/OrigioBurstSword.png" width = "250" height = "250" style = "margin-left:25px; margin-top:-35px"><td>
 			</tr>
 		</table>
 	</div>

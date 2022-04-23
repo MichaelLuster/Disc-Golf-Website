@@ -62,7 +62,7 @@ if(isset($_POST['login_user'])) {
     $query = "SELECT * FROM CUSTOMER WHERE (username = '$username' AND password = '$password') OR (email = '$username' AND password = '$password')";
     $results = mysqli_query($conn, $query);
     $num_rows = mysqli_num_rows($results);
-
+    echo "username: $username";
     //If there is a match, then send the username/email to MainMenu else print "Wrong Username or password"
     if($num_rows > 0){
         $_SESSION['username'] = $username;
@@ -71,6 +71,8 @@ if(isset($_POST['login_user'])) {
     }
     else{
         array_push($errors, "Wrong username/password");
+        array_push($errors, "Username: $username");
+        array_push($errors, "Password: $password");
     }
 }
 
@@ -98,11 +100,20 @@ if(isset($_POST['Admin_login_user'])) {
 //Add Inventory option, for admins only
 if(isset($_POST['Add_Inventory'])){
     $disctourseries = mysqli_real_escape_string($conn, $_POST['disctourseries']);
+    $discrun = mysqli_real_escape_string($conn, $_POST['discrun']);
     $discname = mysqli_real_escape_string($conn, $_POST['discname']);
     $discmanufacturer = mysqli_real_escape_string($conn, $_POST['discmanufacturer']);
     $discplastic = mysqli_real_escape_string($conn, $_POST['discplastic']);
+    $discspeed = mysqli_real_escape_string($conn, $_POST['discspeed']);
+    $discglide = mysqli_real_escape_string($conn, $_POST['discglide']);
+    $discturn = mysqli_real_escape_string($conn, $_POST['discturn']);
+    $discfade = mysqli_real_escape_string($conn, $_POST['discfade']);
+    $discuse = mysqli_real_escape_string($conn, $_POST['discuse']);
+    $discstability = mysqli_real_escape_string($conn, $_POST['discstability']);
+    $discbead = mysqli_real_escape_string($conn, $_POST['discbead']);
+    $discdescription = mysqli_real_escape_string($conn, $_POST['discdescription']);
 
-    $query = "SELECT * FROM INVENTORY WHERE disctourseries = '$disctourseries' AND discname = '$discname' AND discmanufacturer = '$discmanufacturer' AND discplastic = '$discplastic'";
+    $query = "SELECT * FROM INVENTORY WHERE discrun = '$discrun' AND disctourseries = '$disctourseries' AND discname = '$discname' AND discmanufacturer = '$discmanufacturer' AND discplastic = '$discplastic'";
     $results = mysqli_query($conn, $query);
     $num_rows = mysqli_num_rows($results);
 
@@ -111,10 +122,10 @@ if(isset($_POST['Add_Inventory'])){
         array_push($errors, "Entry already exists");
     }
     else{
-        $results = "INSERT INTO INVENTORY (disctourseries, discname, discmanufacturer, discplastic) VALUES ('".$disctourseries."','".$discname."', '".$discmanufacturer."', '".$discplastic."')";
+        $results = "INSERT INTO INVENTORY (disctourseries, discrun, discname, discmanufacturer, plastic) VALUES ('".$disctourseries."','".$discrun."','".$discname."','".$discmanufacturer."','".$discplastic."')";
         mysqli_query($conn, $results);
         header('location: Inventory_List.php');
-    }
+   }
 }
 
 ?>
