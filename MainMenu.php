@@ -25,7 +25,7 @@ if(isset($_GET['logout'])){
 		</form>
 
         <?php if(isset($_SESSION['username'])) :?>
-            <p class = "WelcomeMess"><b>Welcome Back,<br><?php echo $_SESSION['username']; ?></b></p>
+            <p class = "WelcomeBack"><b>Welcome Back,<br><?php echo $_SESSION['username']; ?></b></p>
         <?php endif ?>
         <?php if(!isset($_SESSION['username'])) : ?>
             <a href ="CustomerLogin.php" style="text-decoration:none"><button class = "btnSignIn"> Sign In</button></a>
@@ -64,7 +64,7 @@ if(isset($_GET['logout'])){
 					<table>
 						<tr><th><b>Sell</b></th></tr>
 						<tr><td><button class = "Button">Account</button></td></tr>
-						<tr><td><button class = "Button">Seller Portal</button></td></tr>
+						<tr><td><a href = "SellerPortal/SellerLogIn.php"><button class = "Button">Seller Portal</button></a></td></tr>
 						<tr><td><button class = "Button">Marketplace Seller Resources</button></td></tr>
 						<tr><td><button class = "Button">Pro Seller Resources</button></td></tr>
                         <tr><td><button class = "Button"> <a href="MainMenu.php?logout='1'"><?php if(isset($_SESSION['username'])) :?>
@@ -1023,7 +1023,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 10000); // Change image every 20 seconds
+    setTimeout(showSlides, 10000);
 }
 
 function plusSlides(position) {

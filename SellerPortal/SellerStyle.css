@@ -1,0 +1,97 @@
+body {font-family: Arial, Helvetica, sans-serif; margin: 0px;}
+
+.navbar {
+  margin-top: 25px;
+  background-color: gray;
+  overflow: auto;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 12%;
+  text-align: center;
+}
+
+.navbar a.active {
+  background-color: blue;
+}
+
+.topNavText{    
+  padding-top: 20px;
+  text-align: center;
+  font-size: 50px;
+  color: gray;
+}
+
+.WelcomeBack {
+    top: 32px;
+    right: 75px;
+    position: absolute;
+	border: none;
+	font-size: 25px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.Body{
+  padding:20px;
+}
+
+.ViewAll{
+  position: absolute;
+  top: 210px;
+  left: 80px;
+  padding:10px;
+  background-color: rgb(20, 89, 219);
+  color: white;
+}
+
+.productDescription{
+  position: absolute;
+  width: 270px;
+  top: 550px;
+  left: 15px;
+}
+
+.productDescription td{
+  padding: 15px;
+  font-size: 15px;
+}
+
+.productInventory{
+  position: absolute;
+  top: 300px;
+  left: 325px;
+}
+
+.productInventory td{
+  padding: 15px;
+  font-size: 15px;
+}
+
+.productInventory th{
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(236, 234, 234);
+}
+
+.productSave{
+  float: right;
+  margin-right: 15px;
+  width:60px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.productSave{
+  font-size: 15px;;
+  padding: 5px;
+}

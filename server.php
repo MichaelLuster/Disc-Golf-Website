@@ -37,13 +37,8 @@ if(isset($_POST['sign_up'])){
     //If no errors sign up the user and go to MainMenu passing the users email
     if(count($errors) == 0){
         $password = md5($password);
-        // Get the next id
-        $sql = "SELECT id FROM CUSTOMER order by id desc LIMIT 1";
-        $result = $conn->query($sql);
-        $row = $result->fetch_assoc();
-        $row["id"]++;
 
-        $query = "INSERT INTO CUSTOMER (id, username, email, password) VALUES ('".$row["id"]."', '".$username."', '".$email."', '".$password."')";
+        $query = "INSERT INTO CUSTOMER (username, email, password) VALUES ('".$username."', '".$email."', '".$password."')";
         mysqli_query($conn, $query);
 
         $_SESSION['username'] = $email;
@@ -62,20 +57,71 @@ if(isset($_POST['login_user'])) {
     $query = "SELECT * FROM CUSTOMER WHERE (username = '$username' AND password = '$password') OR (email = '$username' AND password = '$password')";
     $results = mysqli_query($conn, $query);
     $num_rows = mysqli_num_rows($results);
-    echo "username: $username";
+    
     //If there is a match, then send the username/email to MainMenu else print "Wrong Username or password"
     if($num_rows > 0){
         $_SESSION['username'] = $username;
-        $_SESSION['success'] = "Logged in succesfully";
         header('location: MainMenu.php');
     }
     else{
         array_push($errors, "Wrong username/password");
-        array_push($errors, "Username: $username");
-        array_push($errors, "Password: $password");
     }
 }
 
+//Register Seller User
+if(isset($_POST['seller_sign_up'])){
+    $storename = mysqli_real_escape_string($conn,$_POST['storename']);
+    $email = mysqli_real_escape_string($conn,$_POST['email']);
+    $password = mysqli_real_escape_string($conn,$_POST['password']);
+    $Confirmpassword = mysqli_real_escape_string($conn,$_POST['Confirmpassword']);
+
+    //form validation
+    if($Confirmpassword != "")
+        if($password != $Confirmpassword)
+            array_push($errors, "Passwords do not match");
+
+    //Check to see if the username/email and password match the same as ones in the database, with the password being hashed
+    $passwordHash = md5($password);
+    $query = "SELECT * FROM SELLER WHERE (storename = '$torename' AND password = '$password') OR (email = '$email' AND password = '$password')";
+    $results = mysqli_query($conn, $query);
+    $num_rows = mysqli_num_rows($results);
+    if ($num_rows > 0) {
+        if($user['STORENAME'] == $email){array_push($errors, "This storename is already in use");}
+        if($user['EMAIL'] == $email){array_push($errors, "This email is already in use");}
+    }
+
+    //If no errors sign up the user and go to MainMenu passing the users email
+    if(count($errors) == 0){
+        $password = md5($password);
+        $query = "INSERT INTO SELLER (storename, email, password, shipping) VALUES ('".$storename."','".$email."', '".$password."','0.99')";
+        mysqli_query($conn, $query);
+        $_SESSION['email'] = $email;
+        $_SESSION['shipping'] = 0.99;
+        header('location: SellerMainMenu.php');
+    }
+}
+
+//Seller Login user
+if(isset($_POST['Seller_login_user'])) {
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $password = mysqli_real_escape_string($conn, $_POST['password']);
+
+    //Check to see if the username/email and password match the same as ones in the database, with the password being hashed
+    $password = md5($password);
+    $query = "SELECT * FROM SELLER WHERE email = '$email' AND password = '$password'";
+    $results = mysqli_query($conn, $query);
+    $num_rows = mysqli_num_rows($results);
+
+    //If there is a match, then send the username/email to MainMenu else print "Wrong Username or password"
+    if($num_rows > 0){
+        $_SESSION['email'] = $email;
+        $_SESSION['shipping'] = 0.99;
+        header('location: SellerMainMenu.php');
+    }
+    else{
+        array_push($errors, "Wrong email/password");
+    }
+}
 //Admin Login user
 if(isset($_POST['Admin_login_user'])) {
     $manager = mysqli_real_escape_string($conn, $_POST['manager']);
@@ -97,6 +143,7 @@ if(isset($_POST['Admin_login_user'])) {
         array_push($errors, "Wrong username/password");
     }
 }
+
 //Add Inventory option, for admins only
 if(isset($_POST['Add_Inventory'])){
     $disctourseries = mysqli_real_escape_string($conn, $_POST['disctourseries']);
@@ -122,10 +169,22 @@ if(isset($_POST['Add_Inventory'])){
         array_push($errors, "Entry already exists");
     }
     else{
-        $results = "INSERT INTO INVENTORY (disctourseries, discrun, discname, discmanufacturer, plastic) VALUES ('".$disctourseries."','".$discrun."','".$discname."','".$discmanufacturer."','".$discplastic."')";
-        mysqli_query($conn, $results);
+        $query = "INSERT INTO INVENTORY (disctourseries, discrun, discname, discmanufacturer, discplastic, discspeed, discglide, discturn, discfade, discuse, discstability, discbead) VALUES ('$disctourseries', '$discrun', '$discname', '$discmanufacturer','$discplastic', '$discspeed', '$discglide', '$discturn', '$discfade', '$discuse', '$discstability', '$discbead')";
+        mysqli_query($conn, $query);
         header('location: Inventory_List.php');
    }
+}
+
+if(isset($_POST['productListingSave'])){
+    $price = mysqli_real_escape_string($conn, $_POST['price']);
+    $quantity = mysqli_real_escape_string($conn, $_POST['quantity']);
+    $SellerEmail = $_SESSION['email'];
+    $InventoryID = $_SESSION['productid'];
+    $results = "UPDATE SELLER_INV SI join SELLER S on S.ID = SI.SELLER_ID join INVENTORY I on I.ID = SI.INV_ID set SI.QUANTITY = $quantity where S.EMAIL = '$SellerEmail' and I.ID = '$InventoryID'";
+    mysqli_query($conn, $results);
+    $results = "UPDATE SELLER_INV SI join SELLER S on S.ID = SI.SELLER_ID join INVENTORY I on I.ID = SI.INV_ID set SI.Price = $price where S.EMAIL = '$SellerEmail' and I.ID = '$InventoryID'";
+    mysqli_query($conn, $results);
+    header('location: Inventory_List.php');
 }
 
 ?>
