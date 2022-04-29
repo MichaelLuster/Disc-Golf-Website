@@ -26,13 +26,25 @@ Once the user name inputs the information into the Sign up page they will have a
 If a user chooses to log out or their session ends then they will be redirected to the main menu page where the user will have the option to either re-login back in to view their account or have an option to create a new account. 
 <br><br><br>
 
-## Admin
+## Admin Portl
  In the administration page, that only administration will have the link to be to access, there is a login page, that uses similiar setup as the customer sign in page, for allowing the administration to be able to log in to.
  <br> <p align = "center">![AdminLogin](https://user-images.githubusercontent.com/77820332/164319648-d7b11a6a-0cc8-4fb1-b9d6-b9a75e1155c3.png) </p>
  Once logged in the administration currently has the option to be able to mangage the inventory. 
- <br> <p align = "center">![AdminMainMenu](https://user-images.githubusercontent.com/77820332/164319911-a11b2eec-998c-4531-9408-0b55fb843ab2.png)</p>
+ <br> <p align = "center">![AdminMainMenu](https://user-images.githubusercontent.com/77820332/166064741-063d58f1-1373-40d0-874b-b17fc67aea8a.png)</p>
  If the administration clicks the "manage inventory" button then they will be redirected to a page where they can see the current inventory or add another instance. The user can view the inventory by clicking the show inventory button or hide the hide inventory by clicking the hide inventory option. The user can add new inventory by filling in the form and clicking submit
- <br><p align = "center">![AdminManageInventory](https://user-images.githubusercontent.com/77820332/164884953-780a473e-5398-4aa1-8a40-b8208139ccf4.png)
- <br> <p align = "center">![AdminManageInventory1](https://user-images.githubusercontent.com/77820332/164884838-c29d9013-fe7f-4093-b2b6-5a4c82c700d6.png) </p>
+ <br><p align = "center">![AdminManageInventory](https://user-images.githubusercontent.com/77820332/166064929-2e9d161c-a943-41c1-bdae-63f094c8f96e.png)</p>
+ <br> <p align = "center">![AdminManageInventory1](https://user-images.githubusercontent.com/77820332/166065045-db56e8d3-9e64-4dfd-bcd2-b2dacc334fc3.png) </p>
+
+## Seller Portal
+From the main menu page of the customer if they press the modal and click on the "seller portal" they will be brought to the seller portal login page. If a user who wants to sell their discs, they can create a new account by clicking on the "make on here".
+<br><p>![SellerSignIn](https://user-images.githubusercontent.com/77820332/166065499-2bc6af0b-9936-41e4-8bb5-9235a3e75715.png)</p>
+Once a seller logins they will be brought to the main menu where, currently, they can logout or manage inventory.
+<br><p>![SellerMainMenu](https://user-images.githubusercontent.com/77820332/166065696-31e26ea0-3764-4b2f-bcfa-543d595e70d6.png)</p>
+If a user presses "Inventory" they will be brought to a page where they can manage how much they want to sell a disc for and how many of a certain product they have.
+<br><p>![SellerPortalInventory](https://user-images.githubusercontent.com/77820332/166065980-27e9e38e-167a-4488-819f-0b548a78821c.png)</p>
+<br><p>![SellerPortalManageInventory](https://user-images.githubusercontent.com/77820332/166066131-a913bca5-8125-4b5e-8d72-7cfc098fa1da.png)</p>
+
+
+
 
 
