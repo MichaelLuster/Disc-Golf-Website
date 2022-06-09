@@ -9,7 +9,7 @@ The goal is to be able create a more central place for people to be able to find
 
 # Current Progress <br> 
 The current progress includes a main menu for people to be able to see the newest releases, sign in and sign up page, an administration page, and a seller page that can be viewed at the following link:<br><br>
-http://www.csce.uark.edu/~moluster/project_java/MainMenu.php
+http://www.csce.uark.edu/~moluster/project_java/MainMenu/MainMenu.php
 
 ## Main Menu
 <br><p align= "center"> ![Picture1](https://user-images.githubusercontent.com/77820332/156283026-65f8a36b-1936-4189-a319-f1d4d0e77abf.png) </p>
