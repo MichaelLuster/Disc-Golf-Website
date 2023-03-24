@@ -8,7 +8,10 @@ The current problem is there is no central place for people to be able to sell o
 The goal is to be able create a more central place for people to be able to find a disc they are looking for and to have sellers on one central platform to attract more people to their products. 
 
 # Current Progress <br> 
-The current progress includes a main menu for people to be able to see the newest releases, sign in and sign up page, an administration page, and a seller page that can be viewed at the following link:<br><br>
+The current progress includes a main menu for people to be able to see the newest releases, sign in and sign up page, an administration page, and a seller page that can be viewed at the following link:
+<br>
+The server that was being used for this project is not working, so none of the databases will function.
+<br><br>
 http://www.csce.uark.edu/~moluster/project_java/MainMenu/MainMenu.php
 
 ## Main Menu
